@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+:root {
+  /* === color ================================ */
+  --color-main: #dddee0;
+  --color-base: #6b571e92;
+  --color-accent: #f7d7d6;
+  --color-sub: #a6dbee;
+  --color-white: #f8f9fa;
+  --color-black: #332;
+
+  /* === spacing ============================== */
+  --space-xxs: clamp(0.5rem, 0.439rem + 0.26vw, 0.75rem);
+  --space-xs: 1rem;
+  --space-s: clamp(1.5rem, 1.056rem + 2.22vw, 3rem);
+  --space-m: clamp(2rem, 1.704rem + 1.48vw, 3rem);
+  --space-l: clamp(3rem, 2.407rem + 2.96vw, 5rem);
+  --space-xl: 64px;
+  --space-xxl: 80px;
+
+  /* === font size ============================= */
+
+  --title-h1: clamp(1.5rem, 1.346rem + 0.77vw, 2rem);
+  --title-h2: clamp(1.25rem, 1.173rem + 0.38vw, 1.5rem);
+  --title-h3: clamp(1.125rem, 1.087rem + 0.19vw, 1.25rem);
+  --title-h4: clamp(1rem, 0.962rem + 0.19vw, 1.125rem);
+  --title-h5: 1rem;
+  --title-h6: 0.8rem;
+
+  /*=== text ====================================*/
+  --text-l: 1.125rem;
+  --text-m: 1rem;
+  --text-s: 0.875rem;
+
+  /*=== button ==================================*/
+  --button-l: 1.25rem;
+  --button-m: 1rem;
+  --button-s: 0.875rem;
+
+  /* === line height ============================ */
+  --line-height-s: 1.5;
+  --line-height-m: 1.8;
+  --line-height-l: 2;
+
+  /* === border radius ========================== */
+  --radius-l: 20px;
+  --radius-m: 10px;
+  --radius-s: 4px;
+}

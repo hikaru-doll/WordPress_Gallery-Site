@@ -1,0 +1,209 @@
+@charset "utf-8";
+/*
+Theme Name: gallery site
+*/
+/* -------------------
+共通部分
+------------------- */
+body {
+  background-image:
+    linear-gradient(0deg, transparent 20px, #fff4eb 21px),
+    linear-gradient(90deg, transparent 20px, #fff4eb 21px);
+  background-color: #d3c9aa92;
+  background-size: 21px 21px;
+}
+.main {
+  padding: var(--space-s) 0;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-s);
+}
+.bg {
+  padding: var(--space-s);
+  margin: var(--space-s) 0;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+  gap: var(--space-xxs);
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xxs);
+}
+.btn input {
+  background-color: var(--color-black);
+  color: #fff;
+  transition: 0.3s;
+}
+.btn:hover {
+  opacity: 0.6;
+}
+.link {
+  text-align: center;
+  padding: var(--space-s);
+  & a {
+    text-decoration: underline;
+  }
+}
+.title {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: var(--space-l);
+}
+#single .title {
+  font-size: var(--title-h2);
+  margin-bottom: var(--space-xxs);
+}
+/* --------------------------------------
+header
+--------------------------------------- */
+
+/* --ハンバーガーメニュー start-- */
+.ham {
+  display: block;
+  border: none;
+  width: 31px;
+  height: 31px;
+  position: fixed;
+  right: var(--space-xs);
+  top: 16px;
+  z-index: 30;
+  cursor: pointer;
+  background-color: transparent;
+}
+.ham span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  right: 0;
+  background-color: var(--color-black);
+}
+.ham1 {
+  top: calc(50% - 10% / 2 - 25%);
+  transition: 0.2s;
+}
+.ham2 {
+  top: calc(50% - 10% / 2);
+}
+.ham3 {
+  top: calc(50% - 10% / 2 + 25%);
+  transition: 0.5s;
+}
+.open .ham1 {
+  top: calc(50% - 10% / 2);
+  transform: rotate(135deg);
+  background-color: var(--color-white);
+}
+.open .ham2 {
+  opacity: 0;
+}
+.open .ham3 {
+  top: calc(50% - 10% / 2);
+  transform: rotate(-135deg);
+  background-color: var(--color-white);
+}
+.main-navigation {
+  /* display: none; */
+  position: fixed;
+  background-color: var(--color-base);
+  width: 100%;
+  height: auto;
+  padding: var(--space-l) var(--space-s);
+  top: -100%;
+  left: 0;
+  transition: 0.5s ease-out;
+  z-index: 10;
+  & a {
+    color: #fff;
+  }
+}
+.menu-item {
+  line-height: var(--line-height-l);
+  text-align: center;
+}
+.open .main-navigation {
+  top: 0;
+}
+
+/*  --/ハンバーガーメニュー end-- */
+.header {
+  height: auto;
+  .logo {
+    text-align: center;
+    padding: var(--space-xs);
+    /* & img {
+      width: 170px;
+    } */
+    & a {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* ---------------------------------
+footer
+---------------------------------- */
+#footer {
+  padding: var(--space-s) var(--space-s) 0;
+  .list {
+    text-align: center;
+    line-height: var(--line-height-l);
+    margin-bottom: var(--space-s);
+  }
+}
+.copyright {
+  font-size: 0.8rem;
+  text-align: center;
+}
+#contact {
+  padding: var(--space-s);
+  .flex {
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: var(--space-s) 0 0;
+  }
+  & input {
+    border: 1px solid var(--color-black);
+    padding: var(--space-xs) var(--space-xxs);
+  }
+  .btn input {
+    padding: var(--space-xs);
+  }
+  .input {
+    width: 100%;
+  }
+  .wpcf7 form.sent .wpcf7-response-output {
+    /* border: 1px solid rgba(51, 51, 34, 0.342); */
+    border: none;
+    color: rgba(51, 51, 34, 0.699);
+  }
+  .wpcf7 form .wpcf7-response-output {
+    padding: var(--space-xs);
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+#contact > p {
+  text-align: center;
+  letter-spacing: 3px;
+}
+/* ------------------------------
+404.php
+--------------------------------*/
+#not-found {
+  .wrapper div:first-of-type {
+    font-weight: bold;
+    font-size: clamp(3rem, 1.146rem + 7.8vw, 7rem);
+    color: rgba(51, 51, 34, 0.342);
+    margin-bottom: var(--space-s);
+    text-shadow: 3px 3px 3px #3b322ed6;
+  }
+}

@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+@media screen and (min-width: 620px) {
+  #contact {
+    .flex {
+      margin-bottom: var(--space-s);
+    }
+  }
+}
+@media screen and (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #single .product-detail.grid {
+    grid-template-columns: 1fr 2fr;
+  }
+  #page-about {
+    .image img {
+      width: 100%;
+    }
+    .grid {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+  /* メインナビゲーション------ */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: var(--color-base);
+    & a {
+      color: var(--color-white);
+    }
+  }
+  .ham {
+    display: none;
+  }
+  .main-navigation {
+    position: static;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: transparent;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #page-about .grid {
+    grid-template-columns: 1fr 2fr;
+  }
+  #footer {
+    .list {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}

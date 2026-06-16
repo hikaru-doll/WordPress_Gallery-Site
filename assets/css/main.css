@@ -1,0 +1,75 @@
+@charset "utf-";
+/* ------------------
+home.php
+------------------- */
+#home,
+#category-page {
+  .item {
+    position: relative;
+    & img {
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+  .item-detail {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    bottom: var(--space-s);
+    z-index: 2;
+    opacity: 0;
+    transition: 0.4s;
+  }
+  .product-title {
+    font-weight: normal;
+    font-size: medium;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  #home .item:hover img,
+  #category-page .item:hover img {
+    opacity: 0.5;
+  }
+  #home .item:hover .item-detail,
+  #category-page .item:hover .item-detail {
+    opacity: 1;
+  }
+}
+
+/* -------------------------
+single.html
+------------------------- */
+#single {
+  .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .details-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    & img {
+      width: 100%;
+      aspect-ratio: 1/1;
+    }
+  }
+}
+/* -----------------
+page-about.php
+----------------- */
+#page-about {
+  .grid {
+    gap: var(--space-m);
+  }
+  .image {
+    text-align: center;
+  }
+  .image img {
+    width: 200px;
+    aspect-ratio: 1/1;
+    height: auto;
+    border-radius: 50%;
+  }
+}

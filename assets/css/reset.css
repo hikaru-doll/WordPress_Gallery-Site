@@ -1,0 +1,48 @@
+@charset "utf-8";
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--character--color-bl);
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  color: var(--color-black);
+  transition: 0.3s;
+}
+/* a:hover {
+  opacity: 0.8;
+} */
+ul {
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ul,
+li,
+figure {
+  margin: 0;
+  padding: 0;
+}
