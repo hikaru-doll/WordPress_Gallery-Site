@@ -25,7 +25,7 @@ defined('ABSPATH') || exit;
     </button>
     <div class="logo">
       <a href="<?php echo esc_url(home_url()); ?>">
-        Portfolio
+        Gallery-site
       </a>
     </div>
 
