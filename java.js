@@ -25,4 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
   document.addEventListener("keydown", handleKeydown);
+
+  // コピーライトの西暦を動的に出力する
+  const yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
 });
