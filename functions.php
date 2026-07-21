@@ -69,8 +69,8 @@ add_action('after_setup_theme', 'my_setup');
 // WordPress標準機能のメニューを登録する----------------------------
 add_theme_support('menus');
 register_nav_menus([
-  'header_nav' => 'ヘッダーナビゲーション',
-  'footer_nav' => 'フッターナビゲーション'
+  'header_nav' => 'header-nav',
+  'footer_nav' => 'footer-nav'
 ]);
 
 // 投稿画面のACFの画像イメージサイズ変更----------------------------

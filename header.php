@@ -18,7 +18,7 @@ defined('ABSPATH') || exit;
   <?php wp_body_open(); ?>
   <!-- header  ------------------------------------->
   <header class="header">
-    <button class="ham">
+    <button class="ham" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu-header-navigation">
       <span class="ham1"></span>
       <span class="ham2"></span>
       <span class="ham3"></span>
