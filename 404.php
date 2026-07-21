@@ -2,7 +2,7 @@
 defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
-<!-- main start--------------------------------------------------->
+<!-- main ------------------------------->
 <main id="not-found" class="main">
   <div class="wrapper">
     <p class="">
@@ -17,7 +17,5 @@ defined('ABSPATH') || exit;
       please open the menu bar at the top of the page or the hamburger menu and try selecting a category.
     </p>
   </div>
-
 </main>
-<!-- /main end ---------------------------------------------------------->
 <?php get_footer(); ?>

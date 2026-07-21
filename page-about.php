@@ -2,7 +2,7 @@
 defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
-<!-- main start--------------------------------------------------->
+<!-- main ------------------>
 <main id="page-about" class="main">
   <section class="wrapper">
     <?php if (have_posts()): while (have_posts()): the_post(); ?>
@@ -15,13 +15,9 @@ defined('ABSPATH') || exit;
             <?php the_content(); ?>
           </article>
         </div>
-
-
       <?php endwhile; ?>
     <?php else: ?>
     <?php endif; ?>
   </section>
-
 </main>
-<!-- /main end ---------------------------------------------------------->
 <?php get_footer(); ?>

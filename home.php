@@ -2,7 +2,7 @@
 defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
-<!-- main start--------------------------------------------------->
+<!-- main ---------------------------->
 <main id="home" class="main">
   <section class="wrapper">
     <ul class="list grid2">
@@ -41,5 +41,4 @@ defined('ABSPATH') || exit;
     </div>
   </section>
 </main>
-<!-- /main end ---------------------------------------------------------->
 <?php get_footer(); ?>

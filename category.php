@@ -2,7 +2,7 @@
 defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
-<!-- main start -------------------------------------------------------->
+<!-- main  -------------------------------------->
 <main id="category-page" class="main">
   <section class="wrapper">
     <h1 class="title"><?php single_cat_title(); ?></h1>
@@ -41,5 +41,4 @@ defined('ABSPATH') || exit;
     </div>
   </section>
 </main>
-<!-- /main end ---------------------------------------------------------->
 <?php get_footer(); ?>
