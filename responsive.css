@@ -14,10 +14,10 @@
   .grid2 {
     grid-template-columns: repeat(3, 1fr);
   }
-  #single .product-detail.grid {
+  .single-page .product-detail.grid {
     grid-template-columns: 1fr 2fr;
   }
-  #page-about {
+  .page-about {
     .image img {
       width: 100%;
     }
@@ -57,10 +57,10 @@
   .grid2 {
     grid-template-columns: repeat(4, 1fr);
   }
-  #page-about .grid {
+  .page-about .grid {
     grid-template-columns: 1fr 2fr;
   }
-  #footer {
+  .footer {
     .list {
       display: flex;
       justify-content: space-around;

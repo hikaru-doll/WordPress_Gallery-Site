@@ -3,7 +3,7 @@ defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
 <!-- main ---------------------------->
-<main id="home" class="main">
+<main class="home-php main">
   <section class="wrapper">
     <ul class="list grid2">
       <?php if (have_posts()): while (have_posts()): the_post(); ?>

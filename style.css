@@ -56,7 +56,7 @@ body {
   font-weight: normal;
   margin-bottom: var(--space-l);
 }
-#single .title {
+.single-php .title {
   font-size: var(--title-h2);
   margin-bottom: var(--space-xxs);
 }
@@ -152,7 +152,7 @@ header
 /* ---------------------------------
 footer
 ---------------------------------- */
-#footer {
+.footer {
   padding: var(--space-s) var(--space-s) 0;
   .list {
     text-align: center;
@@ -164,7 +164,7 @@ footer
   font-size: 0.8rem;
   text-align: center;
 }
-#contact {
+.contact-container {
   padding: var(--space-s);
   .flex {
     justify-content: center;
@@ -194,14 +194,14 @@ footer
     padding: 0;
   }
 }
-#contact > p {
+.contact-container > p {
   text-align: center;
   letter-spacing: 3px;
 }
 /* ------------------------------
 404.php
 --------------------------------*/
-#not-found {
+.not-found {
   .wrapper div:first-of-type {
     font-weight: bold;
     font-size: clamp(3rem, 1.146rem + 7.8vw, 7rem);

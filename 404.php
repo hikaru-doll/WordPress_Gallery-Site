@@ -3,7 +3,7 @@ defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
 <!-- main ------------------------------->
-<main id="not-found" class="main">
+<main class="main not-found">
   <div class="wrapper">
     <p class="">
       Whoops, that page is gone.

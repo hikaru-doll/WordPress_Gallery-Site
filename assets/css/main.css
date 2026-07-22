@@ -2,8 +2,8 @@
 /* ------------------
 home.php
 ------------------- */
-#home,
-#category-page {
+.home-php,
+.category-php {
   .item {
     position: relative;
     & img {
@@ -27,12 +27,12 @@ home.php
   }
 }
 @media (hover: hover) and (pointer: fine) {
-  #home .item:hover img,
-  #category-page .item:hover img {
+  .home-php .item:hover img,
+  .category-php .item:hover img {
     opacity: 0.5;
   }
-  #home .item:hover .item-detail,
-  #category-page .item:hover .item-detail {
+  .home-php .item:hover .item-detail,
+  .category-php .item:hover .item-detail {
     opacity: 1;
   }
 }
@@ -40,7 +40,7 @@ home.php
 /* -------------------------
 single.html
 ------------------------- */
-#single {
+.single-php {
   .item img {
     width: 100%;
     height: auto;
@@ -59,7 +59,7 @@ single.html
 /* -----------------
 page-about.php
 ----------------- */
-#page-about {
+.page-about {
   .grid {
     gap: var(--space-m);
   }

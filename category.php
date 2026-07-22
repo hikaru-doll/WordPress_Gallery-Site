@@ -3,7 +3,7 @@ defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
 <!-- main  -------------------------------------->
-<main id="category-page" class="main">
+<main class="main category-php">
   <section class="wrapper">
     <h1 class="title"><?php single_cat_title(); ?></h1>
     <?php echo category_description(); ?>

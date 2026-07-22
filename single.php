@@ -3,7 +3,7 @@ defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
 <!-- main start ------------------------------------->
-<main id="single" class="main">
+<main class="single-php main">
   <!-- product image start ------------------->
   <section class="wrapper">
     <ul class="list grid">
