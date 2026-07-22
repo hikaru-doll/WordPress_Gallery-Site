@@ -26,13 +26,13 @@ defined('ABSPATH') || exit;
     <?php if (is_front_page()): ?>;
     <h1 class="logo">
       <a href="<?php echo esc_url(home_url()); ?>">
-        Gallery-site
+        Hikaru doll Gallery-Site
       </a>
     </h1>
   <?php else: ?>
     <div class="logo">
       <a href="<?php echo esc_url(home_url()); ?>">
-        Gallery-site
+        Hikaru doll Gallery-Site
       </a>
     </div>
   <?php endif; ?>
