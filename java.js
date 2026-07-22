@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  //2026年7月22日時点でのハンバーガーメニューの完成版
   const ham = document.querySelector(".ham");
   const body = document.body;
   const navMenu = document.querySelector(".nav-menu");
@@ -80,5 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   ham.addEventListener("click", toggleMenu);
+
+  // コピーライトの西暦を動的に出力する
+  const year = document.getElementById("year");
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
 });
-//2026年7月22日時点でのハンバーガーメニューの完成版
