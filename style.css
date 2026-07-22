@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*
-Theme Name: gallery site
+Theme Name: Hikaru Doll Gallery Site
 */
 /* -------------------
 共通部分
@@ -64,7 +64,7 @@ body {
 header
 --------------------------------------- */
 
-/* --ハンバーガーメニュー start-- */
+/* --ハンバーガーメニュー ---- */
 .ham {
   display: block;
   border: none;
@@ -134,15 +134,13 @@ header
   top: 0;
 }
 
-/*  --/ハンバーガーメニュー end-- */
 .header {
   height: auto;
   .logo {
     text-align: center;
+    font-weight: normal;
     padding: var(--space-xs);
-    /* & img {
-      width: 170px;
-    } */
+
     & a {
       font-size: 2rem;
     }
@@ -182,7 +180,6 @@ footer
     width: 100%;
   }
   .wpcf7 form.sent .wpcf7-response-output {
-    /* border: 1px solid rgba(51, 51, 34, 0.342); */
     border: none;
     color: rgba(51, 51, 34, 0.699);
   }
