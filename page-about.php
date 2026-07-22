@@ -7,14 +7,14 @@ defined('ABSPATH') || exit;
   <section class="wrapper">
     <?php if (have_posts()): while (have_posts()): the_post(); ?>
 
-        <div class="list grid">
+        <article class="list grid">
           <div class="image">
             <?php the_post_thumbnail(); ?>
           </div>
-          <article>
+          <p>
             <?php the_content(); ?>
-          </article>
-        </div>
+          </p>
+        </article>
       <?php endwhile; ?>
     <?php else: ?>
     <?php endif; ?>

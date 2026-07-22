@@ -2,9 +2,9 @@
 defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
-<!-- main start ------------------------------------->
+<!-- main ------------------------------->
 <main class="single-php main">
-  <!-- product image start ------------------->
+  <!-- product image  ---------->
   <section class="wrapper">
     <ul class="list grid">
 
@@ -28,8 +28,7 @@ defined('ABSPATH') || exit;
 
     </ul>
   </section>
-  <!-- /product image end --------------------->
-  <!-- product detail start ------------------->
+  <!-- product detail ---------->
   <section class="wrapper grid product-detail">
     <div class="item-detail">
       <h1 class="title"><?php the_title(); ?></h1>
@@ -49,8 +48,7 @@ defined('ABSPATH') || exit;
       </div>
     </div>
   </section>
-  <!-- /product detail end ----------------->
-  <!-- product image sub start ------------->
+  <!-- product image sub -------->
   <section class="wrapper">
     <ul class="list grid">
 
@@ -73,7 +71,5 @@ defined('ABSPATH') || exit;
 <?php endwhile; ?>
 <?php else: ?>
 <?php endif; ?>
-<!-- /product image sub end --------------->
 </main>
-<!-- /main end ----------------------------------------------->
 <?php get_footer(); ?>

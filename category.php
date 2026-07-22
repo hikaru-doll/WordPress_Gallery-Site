@@ -34,11 +34,11 @@ defined('ABSPATH') || exit;
     </ul>
   </section>
   <?php the_posts_pagination(); ?>
-  <section class="section bg">
+  <!-- <section class="section bg">
     <div class="wrapper">
       <h2>title text</h2>
       <p>text text text text text text text text text text text text</p>
     </div>
-  </section>
+  </section> -->
 </main>
 <?php get_footer(); ?>
