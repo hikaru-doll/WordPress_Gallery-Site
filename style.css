@@ -110,6 +110,7 @@ header
 }
 .main-navigation {
   /* display: none; */
+  visibility: hidden;
   position: fixed;
   background-color: var(--color-base);
   width: 100%;
@@ -128,6 +129,8 @@ header
   text-align: center;
 }
 .open .main-navigation {
+  /* display: block; */
+  visibility: visible;
   top: 0;
 }
 
