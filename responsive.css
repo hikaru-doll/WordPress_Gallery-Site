@@ -39,6 +39,7 @@
     display: none;
   }
   .main-navigation {
+    visibility: visible;
     position: static;
     max-width: 1100px;
     margin: 0 auto;
