@@ -3,7 +3,7 @@ defined('ABSPATH') || exit;
 ?>
 <?php
 // chatGPT--------------------------------------------------------------2026/2/19
-function my_enqueue_styles()
+function my_gallerysite_enqueue_styles()
 {
 
   $uri = get_theme_file_uri();
@@ -50,7 +50,7 @@ function my_enqueue_styles()
     true
   );
 }
-add_action('wp_enqueue_scripts', 'my_enqueue_styles');
+add_action('wp_enqueue_scripts', 'my_gallerysite_enqueue_styles');
 //セットアップ----------------------------------------------------
 function my_setup()
 {
