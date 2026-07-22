@@ -23,27 +23,27 @@ defined('ABSPATH') || exit;
       <span class="ham2"></span>
       <span class="ham3"></span>
     </button>
-    <?php if (is_front_page()): ?>;
-    <h1 class="logo">
-      <a href="<?php echo esc_url(home_url()); ?>">
-        Hikaru doll Gallery-Site
-      </a>
-    </h1>
-  <?php else: ?>
-    <div class="logo">
-      <a href="<?php echo esc_url(home_url()); ?>">
-        Hikaru doll Gallery-Site
-      </a>
-    </div>
-  <?php endif; ?>
+    <?php if (is_front_page()): ?>
+      <h1 class="logo">
+        <a href="<?php echo esc_url(home_url()); ?>">
+          Hikaru doll Gallery-Site
+        </a>
+      </h1>
+    <?php else: ?>
+      <div class="logo">
+        <a href="<?php echo esc_url(home_url()); ?>">
+          Hikaru doll Gallery-Site
+        </a>
+      </div>
+    <?php endif; ?>
 
-  <!-- WP標準メニューの使用  ----------->
-  <?php wp_nav_menu(
-    array(
-      'theme_location' => 'header_nav',
-      'container' => 'nav',
-      'container_class' => 'main-navigation',
-      'menu_class' => 'nav-menu',
-    )
-  ); ?>
+    <!-- WP標準メニューの使用  ----------->
+    <?php wp_nav_menu(
+      array(
+        'theme_location' => 'header_nav',
+        'container' => 'nav',
+        'container_class' => 'main-navigation',
+        'menu_class' => 'nav-menu',
+      )
+    ); ?>
   </header>
