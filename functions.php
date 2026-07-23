@@ -2,7 +2,6 @@
 defined('ABSPATH') || exit;
 ?>
 <?php
-// chatGPT--------------------------------------------------------------2026/2/19
 function my_gallerysite_enqueue_styles()
 {
 
@@ -44,9 +43,9 @@ function my_gallerysite_enqueue_styles()
   );
   wp_enqueue_script(
     'my-script',
-    get_theme_file_uri('/java.js'),
+    get_theme_file_uri('/main.js'),
     array(),
-    filemtime(get_theme_file_path('/java.js')),
+    filemtime(get_theme_file_path('/main.js')),
     true
   );
 }
@@ -63,16 +62,13 @@ function my_setup()
     'gallery',
     'caption',
   ));
+  add_theme_support('menus'); // WordPress標準機能のメニューを登録する
+  register_nav_menus([
+    'header_nav' => 'header-nav',
+    'footer_nav' => 'footer-nav'
+  ]);
 }
 add_action('after_setup_theme', 'my_setup');
-
-// WordPress標準機能のメニューを登録する----------------------------
-add_theme_support('menus');
-register_nav_menus([
-  'header_nav' => 'header-nav',
-  'footer_nav' => 'footer-nav'
-]);
-
 // 投稿画面のACFの画像イメージサイズ変更----------------------------
 function custom_acf_admin_image_size()
 {
