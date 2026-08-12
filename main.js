@@ -86,4 +86,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (year) {
     year.textContent = new Date().getFullYear();
   }
+  // ハニーポット用のinputにフォーカスが当たるのを避ける
+  document.querySelectorAll("input[tabindex]").forEach(function (el) {
+    var tIndex = parseInt(el.getAttribute("tabindex"), 10);
+    if (tIndex >= 999) {
+      el.setAttribute("tabindex", "-1");
+    }
+  });
 });
