@@ -8,21 +8,36 @@ defined('ABSPATH') || exit;
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <!-- 構造化データ ------------------------------->
-  <!-- /構造化データ end--------------------------->
-  <!-- Google Analyticsのタグを貼る場所 ----------->
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NN6443KM');
+  </script>
+  <!-- End Google Tag Manager -->
   <?php wp_head(); ?>
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN6443KM"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <?php wp_body_open(); ?>
   <!-- header  ------------------------------------->
   <header class="header">
-    <button class="ham" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu-header-navigation">
-      <span class="ham1"></span>
-      <span class="ham2"></span>
-      <span class="ham3"></span>
-    </button>
+
     <?php if (is_front_page()): ?>
       <h1 class="logo">
         <a href="<?php echo esc_url(home_url()); ?>">
@@ -36,7 +51,11 @@ defined('ABSPATH') || exit;
         </a>
       </div>
     <?php endif; ?>
-
+    <button class="ham" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu-header-navigation">
+      <span class="ham1"></span>
+      <span class="ham2"></span>
+      <span class="ham3"></span>
+    </button>
     <!-- WP標準メニューの使用  ----------->
     <?php wp_nav_menu(
       array(

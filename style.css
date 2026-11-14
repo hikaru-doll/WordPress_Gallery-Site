@@ -130,7 +130,6 @@ header
   text-align: center;
 }
 .open .main-navigation {
-  /* display: block; */
   visibility: visible;
   top: 0;
 }
@@ -198,6 +197,17 @@ footer
   text-align: center;
   letter-spacing: 3px;
   font-size: var(--title-h2);
+}
+.attention {
+  font-size: var(--text-s);
+  margin-bottom: var(--space-l);
+  position: relative;
+}
+.attention::before {
+  content: "※";
+  position: absolute;
+  left: -1rem;
+  top: 0;
 }
 /* ------------------------------
 404.php

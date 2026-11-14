@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //2026年7月22日時点でのハンバーガーメニューの完成版
+  // ハンバーガーメニュー
   const ham = document.querySelector(".ham");
   const body = document.body;
   const navMenu = document.querySelector(".nav-menu");
 
   // フォーカス対象となるナビ内リンク（<li><a>のa要素）を取得
-  // 将来配列のメソッドを使う時を考慮して、配列にしておく（NodeListではなくて）
   const navLinks = Array.from(navMenu.querySelectorAll("li > a"));
 
   let isOpen = false;
@@ -87,4 +86,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (year) {
     year.textContent = new Date().getFullYear();
   }
+  // ハニーポット用のinputにフォーカスが当たるのを避ける
+  document.querySelectorAll("input[tabindex]").forEach(function (el) {
+    var tIndex = parseInt(el.getAttribute("tabindex"), 10);
+    if (tIndex >= 999) {
+      el.setAttribute("tabindex", "-1");
+    }
+  });
 });

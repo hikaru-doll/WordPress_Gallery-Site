@@ -80,3 +80,29 @@ function custom_acf_admin_image_size()
     </style>';
 }
 add_action('admin_head', 'custom_acf_admin_image_size');
+
+
+// 構造化データ
+function insert_custom_structured_data()
+{
+  // 1. トップページの場合
+  if (is_front_page() || is_home()) {
+?>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "name": "Hikaru doll Gallery-Site",
+        "description": "アクセサリー作家のポートフォリオです。",
+        "dateCreated": "2023",
+        "creator": {
+          "@type": "Person",
+          "name": "hikaru doll",
+          "sameAs": "https://minne.com/@hikaridoll",
+        }
+      }
+    </script>
+<?php
+  }
+}
+add_action('wp_head', 'insert_custom_structured_data');
