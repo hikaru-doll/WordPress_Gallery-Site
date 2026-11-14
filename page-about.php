@@ -6,14 +6,13 @@ defined('ABSPATH') || exit;
 <main class="page-about main">
   <section class="wrapper">
     <?php if (have_posts()): while (have_posts()): the_post(); ?>
-
         <article class="list grid">
           <div class="image">
             <?php the_post_thumbnail(); ?>
           </div>
-          <p>
+          <div>
             <?php the_content(); ?>
-          </p>
+          </div>
         </article>
       <?php endwhile; ?>
     <?php else: ?>
