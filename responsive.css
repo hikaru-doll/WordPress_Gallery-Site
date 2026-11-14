@@ -14,7 +14,7 @@
   .grid2 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .single-page .product-detail.grid {
+  .product-detail.grid {
     grid-template-columns: 1fr 2fr;
   }
   .page-about {
@@ -23,6 +23,7 @@
     }
     .grid {
       grid-template-columns: 1fr 2fr;
+      align-items: center;
     }
   }
   /* メインナビゲーション------ */
