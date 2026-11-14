@@ -9,11 +9,28 @@ defined('ABSPATH') || exit;
     <ul class="list grid">
 
       <?php if (have_posts()): while (have_posts()): the_post(); ?>
+
+          <?php $post_id = get_the_ID();
+          $get_item_field = function ($field_name) use ($post_id) {
+            if (function_exists('get_field')) {
+              return get_field($field_name, $post_id);
+            }
+            return get_post_meta($post_id, $field_name, true);
+          };
+          $main_image = $get_item_field('main_image');
+          $image_1 = $get_item_field('image_1');
+          $image_2 = $get_item_field('image_2');
+          $image_3 = $get_item_field('image_3');
+          $image_4 = $get_item_field('image_4');
+          $price = $get_item_field('price');
+          ?>
+
+
           <?php
           $images3 = [
-            get_field('main_image'),
-            get_field('image_1'),
-            get_field('image_2'),
+            $main_image,
+            $image_1,
+            $image_2
           ]; ?>
 
           <?php foreach ($images3 as $img): ?>
@@ -34,7 +51,7 @@ defined('ABSPATH') || exit;
       <h1 class="title"><?php the_title(); ?></h1>
       <p class="price">
         <?php
-          $price = get_field('price');
+          $price = esc_html($price);
           if ($price !== '') {
             echo '&yen;' . esc_html(number_format((int)$price));
           }
@@ -54,8 +71,8 @@ defined('ABSPATH') || exit;
 
       <?php
           $images2 = [
-            get_field('image_3'),
-            get_field('image_4'),
+            $image_3,
+            $image_4
           ]; ?>
       <?php foreach ($images2 as $img): ?>
         <?php if ($img): ?>
