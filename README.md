@@ -1,7 +1,14 @@
+<<<<<<< HEAD
  # Hikaru Doll Gallery Site
 
  ## DEMO
 🔗[Hikaru Doll Gallery Site](https://hikarudoll.xsrv.jp/gallery-site/)  
+=======
+ # Gallery Site
+
+ ## DEMO
+🔗[Gallery Site](https://hikarudoll.xsrv.jp/gallery-site/)  
+>>>>>>> 53059c40038f5b0eaa2c10d49e557c48b3e631f9
  ※ポートフォリオ用の架空サイトです。実在するクリエイターのギャラリーではありません。
  ## 使用技術
  HTML / CSS / JavaScript / PHP / WordPress 
