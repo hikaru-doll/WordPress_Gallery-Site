@@ -2,9 +2,9 @@
 defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
-<!-- main ------------------------------->
+<!-- main -->
 <main class="single-php main">
-  <!-- product image  ---------->
+  <!-- product image  -->
   <section class="wrapper">
     <ul class="list grid">
 
@@ -45,7 +45,7 @@ defined('ABSPATH') || exit;
 
     </ul>
   </section>
-  <!-- product detail ---------->
+  <!-- product detail -->
   <section class="wrapper grid product-detail">
     <div class="item-detail">
       <h1 class="title"><?php the_title(); ?></h1>
@@ -65,7 +65,7 @@ defined('ABSPATH') || exit;
       </div>
     </div>
   </section>
-  <!-- product image sub -------->
+  <!-- product image sub -->
   <section class="wrapper">
     <ul class="list grid">
 

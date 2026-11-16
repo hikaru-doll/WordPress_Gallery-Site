@@ -1,9 +1,9 @@
   <?php
   defined('ABSPATH') || exit;
   ?>
-  <!-- footer  --------------------->
+  <!-- footer  -->
   <footer class="footer wrapper">
-    <!-- contact(mailing list)------>
+    <!-- contact(mailing list)　-->
     <div class="contact-container">
       <p>Contact</p>
 

@@ -2,7 +2,7 @@
 defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
-<!-- main ------------------------------->
+<!-- main -->
 <main class="main not-found">
   <div class="wrapper">
     <p class="">

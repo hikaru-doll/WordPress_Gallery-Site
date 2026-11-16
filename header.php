@@ -35,7 +35,7 @@ defined('ABSPATH') || exit;
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <?php wp_body_open(); ?>
-  <!-- header  ------------------------------------->
+  <!-- header -->
   <header class="header">
 
     <?php if (is_front_page()): ?>
@@ -56,7 +56,7 @@ defined('ABSPATH') || exit;
       <span class="ham2"></span>
       <span class="ham3"></span>
     </button>
-    <!-- WP標準メニューの使用  ----------->
+    <!-- WP標準メニューの使用  -->
     <?php wp_nav_menu(
       array(
         'theme_location' => 'header_nav',

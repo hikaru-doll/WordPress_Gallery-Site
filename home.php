@@ -2,7 +2,7 @@
 defined('ABSPATH') || exit;
 ?>
 <?php get_header(); ?>
-<!-- main ---------------------------->
+<!-- main -->
 <main class="home-php main">
   <section class="wrapper">
     <ul class="list grid2">
